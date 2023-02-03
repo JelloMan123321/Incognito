@@ -1,18 +1,6 @@
 <!DOCTYPE html>
 <html>
-    <script>
-let password = "";
-let passwordInput = document.createElement("input");
-passwordInput.type = "password";
-passwordInput.style.fontSize = "20px";
-passwordInput.style.padding = "10px";
-passwordInput.style.width = "300px";
-document.body.appendChild(passwordInput);
-passwordInput.addEventListener("keypress", function(event) {
-  password += event.key;
-  event.preventDefault();
-});
-
+    <script>let password = prompt("Enter password:");
 if (password !== "SusJello") {
   location.reload();
 }
